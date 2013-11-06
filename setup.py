@@ -44,7 +44,27 @@ def setup_oh_my_zsh():
         print >>sys.stderr, "Trouble linking %s to %s." % (zshrc, dest)
     else:
         print "Linked %s to %s." % (zshrc, dest)
+
+    bindir = os.path.expanduser('~/bin')
+    try:
+        os.mkdir(bindir)
+    except:
+        print >>sys.stderr, "Trouble creating %s." % bindir
+    else:
+        print "Created empty %s." % bindir
+
+    # add starter .paths file with ~/bin
+    paths = os.path.join(home, '.paths')
+    try:
+        with open(paths, 'w') as f:
+            f.write(bindir + '\n')
+    except:
+        print >>sys.stderr, "Trouble creating %s." % paths
+    else:
+        print "Created %s." % paths
+
     # set default
+    print "Setting zsh as the default shell.."
     os.system('chsh -s `which zsh`')
 
 
