@@ -1,0 +1,11 @@
+syntax: glob
+
+pybox
+*.pyc
+
+*.komodoproject
+
+.tern-port
+
+*.iml
+.idea

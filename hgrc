@@ -1,0 +1,38 @@
+[ui]
+username = Mihnea Dobrescu-Balaur <mihneadb@gmail.com>
+merge = internal:merge
+ignore = ~/.hgignore
+
+[defaults]
+qnew = -Ue
+bzexport = -e
+diff = -pU8
+qdiff = -pU8
+qseries = -sv
+
+[extensions]
+mq =
+color =
+pager =
+bzexport = $HOME/Dropbox/Configs/bzextensions/bzexport/bzexport.py
+mozext = $HOME/Dropbox/Configs/bzextensions/hgext-gecko-dev
+
+progress =
+record =
+convert =
+
+[diff]
+git = 1
+showfunc = 1
+unified = 8
+
+[bzexport]
+bugzilla = https://bugzilla.mozilla.org
+api_server = https://api-dev.bugzilla.mozilla.org/latest/
+
+[paths]
+try = ssh://hg.mozilla.org/try
+
+[hooks]
+post-push = hg phase --force --draft "mq()"
+

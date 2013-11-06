@@ -1,0 +1,40 @@
+#alias ls='ls -FG'
+#alias ll='ls -l'
+#alias go=open
+alias gopen=gnome-open
+alias diff=colordiff
+#alias pacman=pacman-color
+alias up='brew update && brew upgrade'
+#alias up='sudo aptitude update && sudo aptitude dist-upgrade'
+#alias up='sudo apt-get update && sudo apt-get dist-upgrade'
+#alias up='yaourt -Syua --devel'
+alias cd..='cd ..'
+alias ac='source pybox/bin/activate'
+alias valgrindfull='valgrind --leak-check=full --show-reachable=yes'
+#alias rgdm='sudo systemctl stop gdm.service && sudo systemctl start gdm'
+#alias steam='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite &> /dev/null &'
+alias upvim='vim -u ~/.bundles.vim +BundleInstall! +q'
+#alias ack=ack-grep
+alias sdn='sudo shutdown -h now'
+alias egcc='g++ *.cpp -lGL -lGLU -lglut -lm -o app'
+alias cdt='cd ~/localCode/homework/Anul3'
+alias icc='/opt/intel/bin/icc'
+alias server='python2 -m SimpleHTTPServer'
+alias lolen='lolcommits --enable'
+
+alias ec='emacsclient -t'
+alias eg='emacsclient -nc'
+
+alias lock='cinnamon-screensaver-command -a'
+
+alias wget='wget -4'
+
+#alias vim='emacsclient -t'
+#alias mvim='emacsclient -c'
+alias e='emacsclient -t'
+alias ec='emacsclient -c -n'
+
+alias emacs='open -a ~/Applications/Emacs.app'
+alias e='/usr/local/bin/emacs'
+
+alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
