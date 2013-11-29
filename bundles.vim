@@ -29,6 +29,7 @@ Bundle 'tpope/vim-liquid'
 Bundle 'tpope/vim-markdown'
 Bundle 'psykidellic/vim-jekyll'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'mattn/emmet-vim'
 
 filetype plugin indent on
 
