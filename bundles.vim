@@ -30,6 +30,8 @@ Bundle 'tpope/vim-markdown'
 Bundle 'psykidellic/vim-jekyll'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'mattn/emmet-vim'
+Bundle 'rodjek/vim-puppet'
+Bundle 'markcornick/vim-vagrant'
 
 filetype plugin indent on
 
