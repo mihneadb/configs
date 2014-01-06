@@ -120,5 +120,3 @@ let g:ycm_confirm_extra_conf = 0
 
 let javascript_enable_domhtmlcss = 1
 
-" Indent HTML (http://bit.ly/18MxZDJ)
-let g:html_indent_inctags="head,html,body,p,head,table,tbody,div,script"
