@@ -34,6 +34,7 @@ alias wget='wget -4'
 alias e='emacsclient -t'
 alias ec='emacsclient -c -n'
 
+alias emacs='open -a ~/Applications/Emacs.app'
 alias e='/usr/local/bin/emacs'
 
 alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
