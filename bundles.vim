@@ -31,6 +31,7 @@ Bundle 'tpope/vim-markdown'
 Bundle 'psykidellic/vim-jekyll'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'ekalinin/Dockerfile.vim'
 
 filetype plugin indent on
 
