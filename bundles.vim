@@ -21,7 +21,7 @@ Bundle 'mattn/emmet-vim'
 Bundle 'Gundo'
 
 " lang specific
-Bundle "pangloss/vim-javascript"
+Bundle 'pangloss/vim-javascript'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'guns/vim-clojure-static'
 Bundle 'marijnh/tern_for_vim'
