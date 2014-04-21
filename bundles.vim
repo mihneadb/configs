@@ -32,6 +32,8 @@ Bundle 'psykidellic/vim-jekyll'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'ekalinin/Dockerfile.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'derekwyatt/vim-scala'
 
 filetype plugin indent on
 
