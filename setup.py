@@ -21,6 +21,7 @@ FILES_TO_LINK = (
     ('inputrc', '.inputrc'),
     ('linux_aliases' if PLATFORM == 'linux' else 'mac_aliases', '.aliases'),
     ('pythonrc', '.pythonrc'),
+    ('refpasterc', '.refpasterc'),
     ('tmux.conf', '.tmux.conf'),
     ('vimrc', '.vimrc'),
 )
