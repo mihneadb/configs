@@ -11,3 +11,4 @@ repl-port
 .lein-repl-history
 
 node_modules
+npm-debug.log
