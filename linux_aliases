@@ -5,9 +5,9 @@ alias gopen=gnome-open
 alias diff=colordiff
 #alias pacman=pacman-color
 #alias up='brew update && brew upgrade'
-#alias up='sudo aptitude update && sudo aptitude dist-upgrade'
+alias up='sudo aptitude update && sudo aptitude dist-upgrade'
 #alias up='sudo apt-get update && sudo apt-get dist-upgrade'
-alias up='yaourt -Syua --devel'
+#alias up='yaourt -Syua --devel'
 alias cd..='cd ..'
 alias ac='source pybox/bin/activate'
 alias valgrindfull='valgrind --leak-check=full --show-reachable=yes'

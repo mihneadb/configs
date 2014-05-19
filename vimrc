@@ -12,13 +12,13 @@ let mapleader = ","
 set laststatus=2
 "set encoding=utf-8
 
+if has("gui_running")
+  set guifont=Source\ Code\ Pro\ 10
+endif
+
+" mac only
 if has("gui_macvim")
   set guifont=Source\ Code\ Pro:h12
-"else
-  ""set guifont=Inconsolata\ Medium\ 13
-  ""set guifont=Ubuntu\ Mono\ 13
-  ""set guifont=Consolas\ 11
-  "set guifont=Source\ Code\ Pro\ Medium\ 10
 endif
 
 colors zenburn
