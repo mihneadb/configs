@@ -1,11 +1,13 @@
 *.swp
 pybox
+pypybox
 .idea
 repl-port
 *.iml
 *.pyc
 .tern-port
 .DS_Store
+*.tar.gz
 .sass-cache/
 .nrepl-port
 .lein-repl-history

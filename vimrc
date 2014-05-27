@@ -13,7 +13,7 @@ set laststatus=2
 "set encoding=utf-8
 
 if has("gui_running")
-  set guifont=Source\ Code\ Pro\ 10
+  set guifont=Source\ Code\ Pro\ 11
 endif
 
 " mac only
