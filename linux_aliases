@@ -31,7 +31,6 @@ alias subl='subl3'
 alias mvim=gvim
 
 alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
-alias git=hub
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 
