@@ -101,6 +101,12 @@ if !exists("*StripWS")
   endfunction
 endif
 
+" Disable indent for current file (need to reload file after to enable indent)
+if !exists("*DisableIndent")
+  function DisableIndent()
+      :setl noai nocin nosi inde=
+  endfunction
+endif
 
 " C-space for omnicomplete
 if has("gui_running")
