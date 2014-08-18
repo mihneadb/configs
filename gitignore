@@ -7,7 +7,7 @@ repl-port
 *.pyc
 .tern-port
 .DS_Store
-*.tar.gz
+/**.tar.gz*/
 .sass-cache/
 .nrepl-port
 .lein-repl-history
