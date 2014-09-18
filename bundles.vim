@@ -33,6 +33,8 @@ Bundle 'elixir-lang/vim-elixir'
 Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'fatih/vim-go'
+
 
 filetype plugin indent on
 
