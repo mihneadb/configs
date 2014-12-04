@@ -34,6 +34,7 @@ Bundle 'ekalinin/Dockerfile.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'fatih/vim-go'
+Bundle 'cespare/vim-toml'
 
 
 filetype plugin indent on
