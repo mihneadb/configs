@@ -59,7 +59,7 @@ def setup_oh_my_zsh():
     try:
         with open(paths, 'w') as f:
             f.write(bindir + '\n')
-            f.write(os.path.expanduser('~/localCode/go')
+            f.write(os.path.expanduser('~/localCode/go'))
     except:
         print >>sys.stderr, "Trouble creating %s." % paths
     else:
