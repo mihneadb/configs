@@ -84,4 +84,6 @@ export _JAVA_OPTIONS='-Dawt.useSystemAAFontSettings=on -Dswing.aatext=true -Dswi
 
 export GOPATH=$HOME/localCode/go
 
-. /etc/profile.d/vte.sh
+if [ -f /etc/profile.d/vte.sh ]; then
+    . /etc/profile.d/vte.sh
+fi
