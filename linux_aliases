@@ -27,7 +27,6 @@ alias eg='emacsclient -nc'
 
 alias lock='cinnamon-screensaver-command -a'
 
-alias subl='subl3'
 alias mvim=gvim
 
 alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
