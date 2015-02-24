@@ -68,3 +68,5 @@ export PYTHONSTARTUP=~/.pythonrc
 
 export LANG=en_US.UTF-8
 
+# Accept # to prefix lines
+set -k
