@@ -14,8 +14,8 @@ qseries = -sv
 mq =
 color =
 pager =
-bzexport = $HOME/Dropbox/Configs/bzextensions/bzexport/bzexport.py
-mozext = $HOME/Dropbox/Configs/bzextensions/hgext-gecko-dev
+#bzexport = $HOME/Dropbox/Configs/bzextensions/bzexport/bzexport.py
+#mozext = $HOME/Dropbox/Configs/bzextensions/hgext-gecko-dev
 
 progress =
 record =

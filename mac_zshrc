@@ -51,6 +51,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# support interactive comments
+set -k
+
 export PATH="/usr/local/bin:/sbin:/usr/sbin:/bin:/usr/bin"
 # extend path
 while read line; do
