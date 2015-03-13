@@ -27,11 +27,10 @@ alias eg='emacsclient -nc'
 
 alias lock='cinnamon-screensaver-command -a'
 
-alias subl='subl3'
 alias mvim=gvim
 
 alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
 
 alias ipy="python -c 'import IPython; IPython.terminal.ipapp.launch_new_instance()'"
 
-alias bright='echo 1800 | sudo tee /sys/class/backlight/intel_backlight/brightness'
+alias bright='echo 800 | sudo tee /sys/class/backlight/intel_backlight/brightness'
