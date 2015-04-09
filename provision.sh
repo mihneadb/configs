@@ -15,7 +15,7 @@ mkdir localCode
 cd $_
 git clone https://github.com/mihneadb/configs.git
 cd configs
-yes | ./setup.py
+./setup.py --noinput
 
 sudo locale-gen ro_RO.UTF-8
 sudo locale-gen en_US.UTF-8
