@@ -21,7 +21,7 @@ sudo locale-gen ro_RO.UTF-8
 sudo locale-gen en_US.UTF-8
 sudo dpkg-reconfigure locales
 
-zsh -c 'upvim'
+zsh -c 'vim -u ~/.bundles.vim +BundleInstall! +q'
 cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 
