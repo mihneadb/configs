@@ -24,4 +24,8 @@ sudo locale-gen en_US.UTF-8
 sudo dpkg-reconfigure locales
 
 zsh -c 'upvim'
+cd ~/.vim/bundle/YouCompleteMe
+./install.sh --clang-completer
+
+wget -qO- https://get.docker.com/ | sh
 
