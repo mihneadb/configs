@@ -12,7 +12,7 @@ sudo aptitude -y install sudo tmux htop cmake g++ python-dev build-essential cla
     vim-nox python-pip zsh git
 
 mkdir localCode
-cd $_
+cd localCode
 git clone https://github.com/mihneadb/configs.git
 cd configs
 ./setup.py --noinput
