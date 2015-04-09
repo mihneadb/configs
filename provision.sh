@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "Make sure to create user before and run it as that user."
+echo "Might need swap for clang completer in ycm."
 sleep 5
 
 sudo apt-get -y update
@@ -8,8 +9,8 @@ sudo apt-get -y install aptitude
 sudo aptitude -y update
 sudo aptitude -y dist-upgrade
 
-sudo aptitude -y install sudo tmux htop cmake g++ python-dev build-essential clang \
-    vim-nox python-pip zsh git
+sudo aptitude -y install sudo tmux htop cmake g++ python-dev build-essential \
+    clang libclang-dev vim-nox python-pip zsh git
 
 mkdir localCode
 cd localCode
@@ -23,7 +24,7 @@ sudo dpkg-reconfigure locales
 
 zsh -c 'vim -u ~/.bundles.vim +BundleInstall! +q'
 cd ~/.vim/bundle/YouCompleteMe
-./install.sh --clang-completer
+./install.sh --clang-completer --system-libclang
 
 wget -qO- https://get.docker.com/ | sh
 sudo usermod -aG docker mihnea
