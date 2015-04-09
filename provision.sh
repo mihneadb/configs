@@ -1,17 +1,15 @@
 #!/bin/bash
 
-apt-get -y update
-apt-get -y install aptitude
-aptitude -y update
-aptitude -y dist-upgrade
+echo "Make sure to create user before and run it as that user."
+sleep 5
 
-aptitude -y install sudo tmux htop cmake g++ python-dev build-essential clang \
+sudo apt-get -y update
+sudo apt-get -y install aptitude
+sudo aptitude -y update
+sudo aptitude -y dist-upgrade
+
+sudo aptitude -y install sudo tmux htop cmake g++ python-dev build-essential clang \
     vim-nox python-pip zsh git
-
-adduser mihnea
-visudo
-su - mihnea
-cd
 
 mkdir localCode
 cd $_
@@ -28,4 +26,5 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer
 
 wget -qO- https://get.docker.com/ | sh
+sudo usermod -aG docker mihnea
 
