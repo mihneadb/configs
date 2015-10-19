@@ -126,3 +126,6 @@ let g:ycm_confirm_extra_conf = 0
 
 let javascript_enable_domhtmlcss = 1
 
+" Racer
+let g:racer_cmd = "~/localCode/racer/target/release/racer"
+let $RUST_SRC_PATH=$HOME . "/localCode/rust/src/"

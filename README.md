@@ -3,5 +3,11 @@ feel free to steal :).
 
 Usage:
 
+For packages and everything.
+
+    wget -qO- http://tinyurl.com/provisionsh | sh
+
+Just the dotfiles.
+
     ./setup.py
 

@@ -105,6 +105,8 @@ def main():
 
 if __name__ == '__main__':
     print "Make sure you have git and zsh installed."
-    raw_input("Press enter.. ")
+    # Support a dummy noinput flag.
+    if len(sys.argv) == 1:
+        raw_input("Press enter.. ")
     main()
 
