@@ -40,6 +40,6 @@ alias e='/usr/local/bin/emacs'
 alias deploygh="git push && git checkout gh-pages && git merge master -m 'merge' && git push && git checkout master"
 alias mou='/Applications/Mou.app/Contents/MacOS/Mou'
 
-alias git=hub
+#alias git=hub
 
 alias restartES='launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch.plist && launchctl load ~/Library/LaunchAgents/homebrew.mxcl.elasticsearch.plist'
