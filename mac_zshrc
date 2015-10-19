@@ -75,3 +75,6 @@ export GOPATH=$HOME/localCode/go
 
 # Accept # to prefix lines
 set -k
+
+
+. /Users/mihneab/torch/install/bin/torch-activate
