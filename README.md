@@ -5,7 +5,7 @@ Usage:
 
 For packages and everything.
 
-    wget -qO- http://tinyurl.com/provisionsh | sh
+    wget -qO- http://tinyurl.com/provision.sh | sh
 
 Just the dotfiles.
 
