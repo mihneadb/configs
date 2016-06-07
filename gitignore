@@ -15,3 +15,5 @@ repl-port
 node_modules
 npm-debug.log
 *.rdb
+
+.vscode
