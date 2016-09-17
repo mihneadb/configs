@@ -15,3 +15,8 @@ repl-port
 node_modules
 npm-debug.log
 *.rdb
+
+# VS Code
+jsconfig.json
+
+a.out
