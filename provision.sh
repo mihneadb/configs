@@ -27,5 +27,5 @@ cd ~/.vim/bundle/YouCompleteMe
 ./install.sh --clang-completer --system-libclang
 
 wget -qO- https://get.docker.com/ | sh
-sudo usermod -aG docker mihnea
+sudo usermod -aG docker `whoami`
 
