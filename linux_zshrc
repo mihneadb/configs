@@ -1,3 +1,5 @@
+fpath+=~/.zfunc
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -42,10 +44,10 @@ ZSH_THEME="dieter"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(command-not-found compleat django git gnu-utils\
+plugins=(command-not-found git gnu-utils\
     history-substring-search lein mercurial python colored-man\
-    colorize history-substring-search node npm github \
-    pip golang heroku safe-paste vagrant)
+    colorize node npm rust\
+    pip golang safe-paste vagrant)
 
 source $ZSH/oh-my-zsh.sh
 

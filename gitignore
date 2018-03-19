@@ -16,4 +16,8 @@ node_modules
 npm-debug.log
 *.rdb
 
+# VS Code
+jsconfig.json
 .vscode
+
+a.out
