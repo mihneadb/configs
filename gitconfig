@@ -24,3 +24,5 @@
 	smudge = git-media-smudge %f
 [hub]
 	host = github.hootops.com
+[branch]
+	autosetuprebase = always
