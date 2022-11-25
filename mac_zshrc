@@ -55,7 +55,9 @@ source $ZSH/oh-my-zsh.sh
 # support interactive comments
 set -k
 
-export PATH="/usr/local/bin:/sbin:/usr/sbin:/bin:/usr/bin"
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
+#export PATH="/usr/local/bin:/sbin:/usr/sbin:/bin:/usr/bin"
 # extend path
 while read line; do
     export PATH="$line:$PATH"
