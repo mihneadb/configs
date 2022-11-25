@@ -1,4 +1,4 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python3
 import os
 import sys
 
@@ -33,7 +33,7 @@ EMPTY_FILES = (
 
 
 def setup_oh_my_zsh():
-    os.system('git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh')
+    os.system('git clone https://github.com/ohmyzsh/ohmyzsh.git ~/.oh-my-zsh')
     if PLATFORM == 'linux':
         zshrc = os.path.join(here, 'linux_zshrc')
     else:
@@ -42,17 +42,17 @@ def setup_oh_my_zsh():
     try:
         os.symlink(zshrc, dest)
     except:
-        print >>sys.stderr, "Trouble linking %s to %s." % (zshrc, dest)
+        print("Trouble linking %s to %s." % (zshrc, dest))
     else:
-        print "Linked %s to %s." % (zshrc, dest)
+        print("Linked %s to %s." % (zshrc, dest))
 
     bindir = os.path.expanduser('~/bin')
     try:
         os.mkdir(bindir)
     except:
-        print >>sys.stderr, "Trouble creating %s." % bindir
+        print("Trouble creating %s." % bindir)
     else:
-        print "Created empty %s." % bindir
+        print("Created empty %s." % bindir)
 
     # add starter .paths file with ~/bin
     paths = os.path.join(home, '.paths')
@@ -61,18 +61,18 @@ def setup_oh_my_zsh():
             f.write(bindir + '\n')
             f.write(os.path.expanduser('~/localCode/go/bin'))
     except:
-        print >>sys.stderr, "Trouble creating %s." % paths
+        print("Trouble creating %s." % paths)
     else:
-        print "Created %s." % paths
+        print("Created %s." % paths)
 
     # set default
-    print "Setting zsh as the default shell.."
+    print("Setting zsh as the default shell..")
     os.system('chsh -s `which zsh`')
 
 
 def setup_vundle():
     os.system('git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle')
-    print "Cloned vundle, don't forget to run 'upvim' ;)"
+    print("Cloned vundle, don't forget to run 'upvim' ;)")
 
 
 def main():
@@ -83,9 +83,9 @@ def main():
         try:
             os.symlink(abs_src, abs_dest)
         except:
-            print >>sys.stderr, "Trouble linking %s to %s." % (abs_src, abs_dest)
+            print("Trouble linking %s to %s." % (abs_src, abs_dest))
         else:
-            print "Linked %s to %s." % (abs_src, abs_dest)
+            print("Linked %s to %s." % (abs_src, abs_dest))
 
 
     for filename in EMPTY_FILES:
@@ -93,20 +93,20 @@ def main():
         try:
             open(path, 'w').close()
         except:
-            print >>sys.stderr, "Trouble creating empty file %s." % path
+            print("Trouble creating empty file %s." % path)
         else:
-            print "Created empty file %s." % path
+            print("Created empty file %s." % path)
 
     setup_oh_my_zsh()
     setup_vundle()
 
-    print "Done! Don't forget to set up ssh and gpg."
+    print("Done! Don't forget to set up ssh and gpg.")
 
 
 if __name__ == '__main__':
-    print "Make sure you have git and zsh installed."
+    print("Make sure you have git and zsh installed.")
     # Support a dummy noinput flag.
     if len(sys.argv) == 1:
-        raw_input("Press enter.. ")
+        input("Press enter.. ")
     main()
 
